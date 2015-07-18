@@ -1,0 +1,680 @@
+/*
+    author  :  ehsan aghei
+    date    : 7/03/2015
+    version : 1.0
+*/
+
+body {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+a:link  {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+* {
+    outline: 0 !important;
+}
+
+.noPadding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.noMargin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/********************* resets *********************/
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+}
+
+.navbar-fixed-top {
+    top: 25px;
+}
+
+.navbar-default .navbar-nav a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.section .container {
+    font-family: 'Titillium Web';
+}
+
+.fp-tableCell {
+   /* position: relative; */
+}
+
+.modal {
+    padding: 0 !important;
+}
+
+.modal-dialog {
+    position: relative;
+    z-index: 1025;
+    margin: 0 !important;
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+.modal-lg {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.modal-lg .modal-content {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.modal-lg .modal-content .modal-body .closeHolder {
+    float: right;
+    width: 100%;
+}
+
+.modal-lg .modal-content .modal-body .close {
+    width: 50px;
+    height: 50px;
+    font-size: 60px;
+    opacity: 1 !important;
+    font-weight: normal;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #ffffff;
+}
+
+.darkStyle .icon-bar {
+    background: #000000 !important;
+}
+
+.darkStyle .navbar-toggle {
+    border-color: #000000;
+}
+
+/********************* end reset *********************/
+
+/********************* css3 transition *********************/
+.toup,
+.socials li a,
+#menu li a,
+.teamMember img,
+.teamMember ul.social li a,
+.logo {
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 350ms ease-in-out;
+    -ms-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+}
+
+/********************* end css3 transition *********************/
+
+.toup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    z-index: 1000;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.toup:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#spiders {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+}
+
+#menu li {
+    padding: 0 7px;
+}
+
+#menu li a {
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menu li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.darkStyle #menu li a {
+    color: #000000 !important;
+}
+
+.logo {
+    background: transparent url("../images/logo.svg") center no-repeat;
+    width: 120px;
+    height: 40px;
+    display: block;
+    float: left;
+}
+
+.darkStyle .logo {
+    background: transparent url("../images/logo_dark.svg") center no-repeat !important;
+}
+
+.section .container {
+    position: relative;
+    z-index: 20;
+}
+
+.section div.pageTitle:first-child {
+    font-family: 'Titillium Web';
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+    margin-top: 2%;
+}
+
+.section div.pageTitle:first-child:after {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+	margin-left: -45px;
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.description ,
+.section .pageDescription {
+    text-align: center;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
+#homeSection {
+    color: #ffffff;
+    position: relative;
+}
+
+#aboutSection {
+    color: #ffffff;
+}
+
+#teamSection {
+    color: #3c4761;
+}
+
+#testimonialSection {
+    color: #ffffff;
+}
+
+#contactSection {
+    color: #ffffff;
+    position: relative;
+}
+
+#homeSection .slogan {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#contactSection .btn,
+#portfolioSection .btn,
+#homeSection .btn {
+    background: #eb7d4b;
+    padding: 20px 100px;
+    margin: 5% auto 0 auto;
+    display: table;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 5px 0 0 #c86a40;
+    box-shadow: 0 5px 0 0 #c86a40;
+}
+
+#contactSection .btn:hover,
+#portfolioSection .btn:hover,
+#homeSection .btn:hover {
+    margin-top: -moz-calc(5% + 5px);
+    margin-top: -webkit-calc(5% + 5px);
+    margin-top: -o-calc(5% + 5px);
+    margin-top: calc(5% + 5px);
+    -webkit-box-shadow: 0 0 0 0 #c86a40;
+    box-shadow: 0 0 0 0 #c86a40;
+}
+
+#contactSection .btn,
+#portfolioSection .btn {
+    background: #17c2a4;
+    margin: 10px auto 50px auto;
+    -webkit-box-shadow: 0 5px 0 0 #14a58c;
+    box-shadow: 0 5px 0 0 #14a58c;
+}
+
+#contactSection .btn:hover,
+#portfolioSection .btn:hover {
+    margin-top: -moz-calc(10px + 5px);
+    margin-top: -webkit-calc(10px + 5px);
+    margin-top: -o-calc(10px + 5px);
+    margin-top: calc(10px + 5px);
+    margin-bottom: 45px !important;
+}
+
+#contactSection .btn {
+    background: #30bae7;
+    margin: 10px auto 50px auto;
+    -webkit-box-shadow: 0 5px 0 0 #299ec5;
+    box-shadow: 0 5px 0 0 #299ec5;
+}
+
+.serviceItem img {
+    margin: 50px auto 0 auto;
+    display: block;
+}
+
+.serviceItem .title {
+    text-align: center;
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 50px 0 20px 0;
+}
+
+.serviceItem .description {
+    font-size: 16px;
+    text-align: center;
+}
+
+.teamMember img {
+    width: 180px;
+    height: 180px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 50px auto 0 auto;
+    display: block;
+}
+
+.teamMember img:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.teamMember .name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0 15px 0;
+}
+
+.teamMember .title {
+    font-size: 16px;
+    color: #30bae7;
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+
+.teamMember ul.social {
+    margin: 30px 0 30px 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    width: 100%;
+}
+
+.teamMember ul.social li {
+    width: 25%;
+    float: left;
+}
+
+.teamMember ul.social li a {
+    width: 35px;
+    height: 35px;
+    background: #bdd1df;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+}
+
+.teamMember ul.social li a i {
+    font-size: 17px;
+}
+
+.teamMember ul.social li a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.pie_progress {
+    width: 160px;
+    height: 160px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.pie_progress svg {
+    margin: 0 auto;
+}
+.pie_progress__content,
+.pie_progress__number,
+.pie_progress__label,
+.pie_progress__icon {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.pie_progress__number {
+    font-size: 42px;
+}
+.pie_progress__label {
+    margin-top: 32px;
+    font-size: 12px;
+}
+.pie_progress__svg {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.pie_progress__svg svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress_area .title {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3c4761;
+    margin: 45px 0 50px 0;
+}
+
+.portfoli-filter {
+    margin: 0 auto 40px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    direction: ltr;
+}
+
+.portfoli-filter li {
+    display: inline;
+    padding: 0 7px;
+}
+
+.portfoli-filter li a {
+    padding: 10px 25px;
+    color: #393939;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+}
+
+.portfoli-filter li a.active {
+    background: rgba(255, 255, 255, 1);
+}
+
+.portfolio-item .title {
+    color: #393939;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px 0 60px 0;
+}
+
+.portfolioModaContentPadding {
+    padding-top: 70px;
+    float: left;
+}
+
+.portfolioModaContentPadding img {
+    margin: 0 auto;
+    display: block;
+}
+
+.protfolioModalTitle {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.authorSing {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.client {
+    margin-bottom: 80px;
+}
+
+.client img {
+    width: 96px;
+    height: 96px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.client .name,
+.client .quote {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.client .name {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.client .title {
+    padding-top: 5px;
+    color: #ffdd99;
+    font-size: 17px;
+}
+
+#contactSection .contact_mrgbtm {
+    padding-bottom: 100px;
+}
+#contactSection .input-group {
+    margin-bottom: 30px;
+}
+
+#contactSection .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+#contactSection input[type=text] {
+    background: #273a71;
+    border: none;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#contactSection .input-group-addon {
+    background: #273a71;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    color: #ffffff;
+	padding: 0 16px;
+}
+
+#contactSection .red {
+    color: #ff0000;
+}
+
+#contactSection textarea {
+    min-height: 200px;
+    color: #ffffff;
+    background: #273a71;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.socialFooter {
+    background: #344b8e;
+    border-top: 1px solid #cccccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.socialFooter .container {
+    padding-top: 0;
+}
+
+.socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    direction: ltr;
+    text-align: center;
+    font-family: 'Titillium Web';
+}
+
+.socials li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 30px
+}
+
+.socials li a {
+    color: #ffffff;
+    display: block;
+}
+
+.socials li a:hover {
+    color: #30bae7;
+}
+
+
+/** responsive fix  **/
+
+@media (max-width: 360px) {  /* xxs  */
+
+    .navbar-collapse {
+        border: none;
+        box-shadow:none;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .section div.pageTitle:first-child { font-size: 25px; }
+    .portfoli-filter li a { margin-bottom: 10px; }
+    #portfolioSection .btn, #contactSection .btn { padding: 20px 50px; }
+    .description, .section .pageDescription { font-size: 15px; }
+    .socials li {  font-size: 14px;  padding: 5px 8px; }
+}
+
+@media (max-width: 767px) { /* xs  */
+
+    .navbar-collapse {
+        border: none;
+        box-shadow:none;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    #homeSection .slogan { font-size: 25px; }
+    .logo { float: left; margin: 0 0 0 15px; }
+    .socials li {  font-size: 14px;  padding: 5px 8px; }
+    .darkStyle #menu li a { color: #ffffff !important; }
+    .portfolio-item img { margin: 0 auto; display: block; }
+}
+@media (min-width: 768px) and (max-width: 991px) {  /* sm */
+
+    #homeSection .slogan { font-size: 30px; }
+    .logo { float: none; margin: 0 auto 12px; }
+    .navbar-header .logo { display: none; }
+    #menu { width: 100% !important; text-align: center; direction: ltr; }
+    .socials li {  font-size: 17px;  padding: 15px 10px; }
+}
+@media (min-width: 992px) and (max-width: 1199px) {  /* md  */
+
+    #homeSection .slogan { font-size: 42px; }
+}
+@media (min-width: 1200px) {  /* lg */
+
+    #homeSection .slogan { font-size: 42px; }
+}

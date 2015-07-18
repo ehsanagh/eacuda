@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ehsan aghaei">
+
+    <title>EACuda Single Page Portfolio</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/csshake.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/responsive.css" rel="stylesheet">-->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="toup"><i class="fa fa-chevron-up"></i></div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container menuStyle">
+
+        <div class="navbar-header">
+            <a class="logo hidden-lg hidden-md hidden-sm" href="#"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <a class="logo hidden-xs" href="#"></a>
+            <ul class="nav navbar-nav navbar-right" id="menu">
+                <li data-menuanchor="home"><a href="#home">Home</a></li>
+                <li data-menuanchor="about"><a href="#about">About</a></li>
+                <li data-menuanchor="team"><a href="#team">Team</a></li>
+                <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+                <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li data-menuanchor="testimonial"><a href="#testimonial">Testimonial</a></li>
+                <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+<div id="fullpage">
+    <canvas id="spiders" class="hidden-xs"></canvas>
+    <div class="section" id="homeSection">
+
+        <div class="container home_content">
+            <h1 class="slogan">
+                Hi there! We are the new kids on the block <br />
+                and we build awesome websites and mobile apps.
+            </h1>
+            <a href="#" class="btn">WORK WITH US!</a>
+
+        </div>
+
+    </div>
+
+    <div class="section" id="aboutSection">
+
+        <div class="container">
+
+            <div class="pageTitle">SERVICES WE PROVIDE</div>
+            <div class="pageDescription">
+                We are working with both individuals and businesses from all over the globe <br />
+                to create awesome websites and applications.
+            </div>
+            <div class="row noMargin">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 serviceItem">
+                    <img src="images/flag.png" alt="Branding"/>
+                    <div class="title">Branding</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br /> sed diam nonummy nibh.</div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 serviceItem">
+                    <img src="images/crayon.png" alt="Design"/>
+                    <div class="title">Design</div>
+                    <div class="description">Sed ut perspiciatis unde<br /> omnis iste natus error sit<br /> voluptatem  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 serviceItem">
+                    <img src="images/gear.png" alt="Development"/>
+                    <div class="title">Development</div>
+                    <div class="description">At vero eos et accusamus et<br /> iusto odio dignissimos qui<br /> blanditiis praesentium.</div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 serviceItem">
+                    <img src="images/rocket.png" alt="ROCKET SCIENCE"/>
+                    <div class="title">ROCKET SCIENCE</div>
+                    <div class="description">Et harum quidem rerum est<br /> et expedita distinctio. Nam<br /> libero tempore.</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section" id="teamSection">
+
+        <div class="container">
+
+            <div class="pageTitle">MEET OUR BEAUTIFUL TEAM</div>
+            <div class="pageDescription">We are a small team of designers and developers, who help brands with big ideas.</div>
+            <div class="row noMargin">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 teamMember">
+                    <img src="images/member1.jpg" alt="Branding"/>
+                    <div class="name">hamid maleki</div>
+                    <div class="title">Web Designer</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, <br />
+                        consectetuer adipiscing elit,<br />
+                        sed diam nonummy nibh<br />
+                        euismod tincidunt ut laoreet<br />
+                        dolore magna.
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 teamMember">
+                    <img src="images/member2.jpg" alt="Design"/>
+                    <div class="name">Ehsan Aghaei</div>
+                    <div class="title">Web Developer</div>
+                    <div class="description">
+                        Duis aute irure dolor in in<br />
+                        voluptate velit esse cillum<br />
+                        dolore fugiat nulla pariatur.<br />
+                        Excepteur sint occaecat non<br />
+                        diam proident.
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 teamMember">
+                    <img src="images/member3.jpg" alt="Development"/>
+                    <div class="name">Afshin Goldarani</div>
+                    <div class="title">UX Designer</div>
+                    <div class="description">
+                        Nemo enim ipsam voluptas<br />
+                        sit aspernatur aut odit aut<br />
+                        fugit, sed quia consequuntur<br />
+                        magni dolores eos qui ratione<br />
+                        voluptatem nesciunt.
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 teamMember">
+                    <img src="images/member4.jpg" alt="ROCKET SCIENCE"/>
+                    <div class="name">farhad ezzati</div>
+                    <div class="title">Marketing</div>
+                    <div class="description">
+                        Sed ut perspiciatis unde<br />
+                        omnis iste natus error sit<br />
+                        voluptatem accusantium<br />
+                        doloremque laudantium,<br />
+                        totam rem aperiam.
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section" id="skillsSection">
+
+        <div class="container">
+
+            <div class="pageTitle">WE GOT SKILLS!</div>
+            <div class="pageDescription">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br />
+                tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+
+            <div class="row noMargin">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 progress_area">
+
+                    <div class="pie_progress" role="progressbar" data-barcolor="#30bae7" data-barsize="13" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+                        <span class="pie_progress__number">0%</span>
+                    </div>
+                    <div class="title">Web Design</div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 progress_area">
+
+                    <div class="pie_progress" role="progressbar" data-barcolor="#d74680" data-barsize="13" data-goal="85" aria-valuemin="0" aria-valuemax="100">
+                        <span class="pie_progress__number">0%</span>
+                    </div>
+                    <div class="title">HTML / CSS</div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 progress_area">
+
+                    <div class="pie_progress" role="progressbar" data-barcolor="#15c7a8" data-barsize="13" data-goal="80" aria-valuemin="0" aria-valuemax="100">
+                        <span class="pie_progress__number">0%</span>
+                    </div>
+                    <div class="title">GRAPHIC DESIGN</div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 progress_area">
+
+                    <div class="pie_progress" role="progressbar" data-barcolor="#eb7d4b" data-barsize="13" data-goal="90" aria-valuemin="0" aria-valuemax="100">
+                        <span class="pie_progress__number">0%</span>
+                    </div>
+                    <div class="title">UI / UX</div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="section" id="portfolioSection">
+
+        <div class="container">
+
+            <div class="pageTitle">OUR PORTFOLIO</div>
+            <div class="pageDescription">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet <br />
+                consectetur, adipisci velit, sed quia non numquam
+            </div>
+
+            <div class="row noMargin">
+
+                <ul class="portfoli-filter">
+                    <li><a data-filter="*" href="#" class="active">all</a></li>
+                    <li><a data-filter=".web" href="#">web</a></li>
+                    <li><a data-filter=".apps" href="#">apps</a></li>
+                    <li><a data-filter=".icon" href="#">icon</a></li>
+                </ul>
+
+                <div class="row noMargin portfolioHolder">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 portfolio-item web">
+                        <a href="#" data-toggle="modal" data-target=".p-itemOne">
+                            <img src="images/portfolio-1.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="title">Isometric Perspective Mock-Up</div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 portfolio-item icon">
+                        <a href="#" data-toggle="modal" data-target=".p-itemTwo">
+                            <img src="images/portfolio-2.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="title">Time Zone App UI</div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 portfolio-item apps web">
+                        <a href="#" data-toggle="modal" data-target=".p-itemThree">
+                            <img src="images/portfolio-3.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="title">Viro Media Players UI</div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 portfolio-item apps icon">
+                        <a href="#" data-toggle="modal" data-target=".p-itemFour">
+                            <img src="images/portfolio-4.png" class="img-responsive" alt="" />
+                        </a>
+                        <div class="title">Blog / Magazine Flat UI Kit</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn loadMore">LOAD MORE PROJECTS</a>
+
+        </div>
+
+    </div>
+
+    <div class="section" id="testimonialSection">
+
+        <div class="container">
+
+            <div class="pageTitle">WHAT POEPLE SAY ABOUT US</div>
+            <div class="pageDescription">
+                Our clients love us!
+            </div>
+
+            <div class="row noMargin">
+
+                <div class="col-lg-6 col-md-6 col-sm-6 client">
+
+                    <div class="col-lg-4">
+                        <img src="images/client2.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="quote">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</div>
+                        <div class="name">John Doe</div>
+                        <div class="title">CEO of Company</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 client">
+
+                    <div class="col-lg-4">
+                        <img src="images/client1.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="quote">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</div>
+                        <div class="name">steve miller</div>
+                        <div class="title">Founder of Haloo</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 client">
+
+                    <div class="col-lg-4">
+                        <img src="images/client3.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="quote">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</div>
+                        <div class="name">jack frost</div>
+                        <div class="title">Designer of Dock Studio</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 client">
+
+                    <div class="col-lg-4">
+                        <img src="images/client4.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="quote">“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</div>
+                        <div class="name">josh gordon</div>
+                        <div class="title">CEO of Duddy</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section" id="contactSection">
+
+        <div class="container contact_mrgbtm">
+
+            <div class="pageTitle">GET IN TOUCH</div>
+            <div class="pageDescription">
+                1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+            </div>
+
+            <div class="row nomargin contact_form">
+
+                <div class="col-lg-8 col-lg-offset-2 nopadding">
+                    <form method="post" id="contactForm">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="input-group input-group-lg">
+                                <label class="input-group-addon" for="name">Your Name <span class="red">*</span></label>
+                                <input type="text" name="name" class="form-control" id="name">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="input-group input-group-lg">
+                                <label class="input-group-addon" for="email">Your Email <span class="red">*</span></label>
+                                <input type="text" name="email" class="form-control" id="email">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12  col-md-12 col-sm-12">
+                            <textarea class="form-control" placeholder="Your Message *" name="message_text" id="messageText"></textarea>
+                        </div>
+
+                        <div class="col-lg-12  col-md-12 col-sm-12"> <a class="btn contactButton">SEND MESSAGE</a> </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid socialFooter">
+            <div class="container">
+                <ul class="socials">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- here is the portfolio item detail modal content that could be edited from here directly or load by ajax request  -->
+
+
+<div class="modal fade p-itemOne" tabindex="-1" role="dialog" aria-labelledby="portfolioOneModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <div class="col-lg-12 closeHolder"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+
+                <div class="container-fluid">
+
+                    <div class="col-lg-10 col-lg-offset-1 noPadding portfolioModaContentPadding">
+
+                        <div class="col-lg-6 col-lg-offset-3"><img src="images/portfolio-1.png" class="img-responsive" alt="" /></div>
+
+                        <div class="col-lg-12 protfolioModalTitle"><h3>Isometric Perspective Mock-Up</h3></div>
+
+                        <div class="col-lg-10 col-lg-offset-1">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque dictum nisi eu feugiat. Morbi molestie venenatis scelerisque. Vestibulum ultrices vitae nibh non rhoncus. Ut interdum nunc sem, eu auctor leo interdum vel. Suspendisse maximus tortor massa. Pellentesque semper erat vitae ultricies maximus. Fusce tempor, justo ac fermentum vestibulum, mauris elit porttitor est, non commodo risus metus quis tellus. Duis commodo ipsum sit amet arcu dapibus interdum. Nulla vitae metus sed lacus finibus scelerisque. Quisque id finibus enim. Maecenas molestie non lectus a placerat. Proin sit amet lectus vel tellus cursus posuere in non mauris. Nulla ullamcorper augue et hendrerit commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                            <p class="authorSing">Author: Ehsan Aghaei</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade p-itemTwo" tabindex="-1" role="dialog" aria-labelledby="portfolioTwoModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <div class="col-lg-12 closeHolder"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+
+                <div class="container-fluid">
+
+                    <div class="col-lg-10 col-lg-offset-1 noPadding portfolioModaContentPadding">
+
+                        <div class="col-lg-6 col-lg-offset-3"><img src="images/portfolio-2.png" class="img-responsive" alt="" /></div>
+
+                        <div class="col-lg-12 protfolioModalTitle"><h3>Isometric Perspective Mock-Up</h3></div>
+
+                        <div class="col-lg-10 col-lg-offset-1">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque dictum nisi eu feugiat. Morbi molestie venenatis scelerisque. Vestibulum ultrices vitae nibh non rhoncus. Ut interdum nunc sem, eu auctor leo interdum vel. Suspendisse maximus tortor massa. Pellentesque semper erat vitae ultricies maximus. Fusce tempor, justo ac fermentum vestibulum, mauris elit porttitor est, non commodo risus metus quis tellus. Duis commodo ipsum sit amet arcu dapibus interdum. Nulla vitae metus sed lacus finibus scelerisque. Quisque id finibus enim. Maecenas molestie non lectus a placerat. Proin sit amet lectus vel tellus cursus posuere in non mauris. Nulla ullamcorper augue et hendrerit commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                            <p class="authorSing">Author: Ehsan Aghaei</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade p-itemThree" tabindex="-1" role="dialog" aria-labelledby="portfolioThreeModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <div class="col-lg-12 closeHolder"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+
+                <div class="container-fluid">
+
+                    <div class="col-lg-10 col-lg-offset-1 noPadding portfolioModaContentPadding">
+
+                        <div class="col-lg-6 col-lg-offset-3"><img src="images/portfolio-3.png" class="img-responsive" alt="" /></div>
+
+                        <div class="col-lg-12 protfolioModalTitle"><h3>Isometric Perspective Mock-Up</h3></div>
+
+                        <div class="col-lg-10 col-lg-offset-1">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque dictum nisi eu feugiat. Morbi molestie venenatis scelerisque. Vestibulum ultrices vitae nibh non rhoncus. Ut interdum nunc sem, eu auctor leo interdum vel. Suspendisse maximus tortor massa. Pellentesque semper erat vitae ultricies maximus. Fusce tempor, justo ac fermentum vestibulum, mauris elit porttitor est, non commodo risus metus quis tellus. Duis commodo ipsum sit amet arcu dapibus interdum. Nulla vitae metus sed lacus finibus scelerisque. Quisque id finibus enim. Maecenas molestie non lectus a placerat. Proin sit amet lectus vel tellus cursus posuere in non mauris. Nulla ullamcorper augue et hendrerit commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                            <p class="authorSing">Author: Ehsan Aghaei</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade p-itemFour" tabindex="-1" role="dialog" aria-labelledby="portfolioFourModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <div class="col-lg-12 closeHolder"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+
+                <div class="container-fluid">
+
+                    <div class="col-lg-10 col-lg-offset-1 noPadding portfolioModaContentPadding">
+
+                        <div class="col-lg-6 col-lg-offset-3"><img src="images/portfolio-4.png" class="img-responsive" alt="" /></div>
+
+                        <div class="col-lg-12 protfolioModalTitle"><h3>Isometric Perspective Mock-Up</h3></div>
+
+                        <div class="col-lg-10 col-lg-offset-1">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque dictum nisi eu feugiat. Morbi molestie venenatis scelerisque. Vestibulum ultrices vitae nibh non rhoncus. Ut interdum nunc sem, eu auctor leo interdum vel. Suspendisse maximus tortor massa. Pellentesque semper erat vitae ultricies maximus. Fusce tempor, justo ac fermentum vestibulum, mauris elit porttitor est, non commodo risus metus quis tellus. Duis commodo ipsum sit amet arcu dapibus interdum. Nulla vitae metus sed lacus finibus scelerisque. Quisque id finibus enim. Maecenas molestie non lectus a placerat. Proin sit amet lectus vel tellus cursus posuere in non mauris. Nulla ullamcorper augue et hendrerit commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                            <p class="authorSing">Author: Ehsan Aghaei</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/spider.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery-asPieProgress.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/contactMe.js"></script>
+<script src="js/main.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
