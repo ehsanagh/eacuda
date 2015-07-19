@@ -1,7 +1,7 @@
 /*
-    author  :  ehsan aghei
+    author  :  ehsan aghei - edited by hosein71
     date    : 7/03/2015
-    version : 1.0
+    version : 1.1
 */
 
 body {
@@ -148,10 +148,18 @@ img {
     border-radius: 50%;
     line-height: 28px;
     cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .toup:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+.toup-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
 }
 
 #spiders {
