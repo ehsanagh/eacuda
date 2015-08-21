@@ -135,6 +135,12 @@ $(document).ready(function(){
             darkMenus.forEach(function(item) {
                 console.log(item);
                 if (anchorLink == item) { menu.addClass('darkStyle'); removeit = false;}
+                if (anchorLink != 'home') {
+                	$('.toup').addClass('toup-visible');
+                }
+                else {
+                	$('.toup').removeClass('toup-visible');
+                }
             });
 
             removeit ? menu.removeClass('darkStyle') : null;
@@ -261,5 +267,3 @@ function animateThese(itemArray) {
     }
 
 }
-
-
